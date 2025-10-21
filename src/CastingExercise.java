@@ -33,6 +33,23 @@ public class CastingExercise {
         System.out.println("Casting: "+ result1);
         System.out.println("No Casting: "+ result2);
 
+        char letter = 'A';
+        int asciiValue = letter;
+        System.out.println("ASCII of 'A': " + asciiValue);
+
+        // manual casting
+        int num = 66;
+        char character = (char) num;
+        System.out.println("Character: " + character);
+
+        // casting String to Int
+        String numberString = "123";
+        int parsedString = Integer.parseInt(numberString);
+        System.out.println(parsedString + 10);
+
+        double parseDouble = Double.parseDouble("44.56");
+        System.out.println(parseDouble);
+
 
     }
 }
