@@ -59,11 +59,18 @@ public class MathRandomDemo {
         System.out.println("Random Double: " + random.nextDouble());
         System.out.println("Random boolean: " + random.nextBoolean());
 
+        System.out.println("Guassian: " + random.nextGaussian());
 
+        // Some examples
 
+        //coin flipping
+        String coinFlip = Math.random() < 0.5 ? "Heads" : "Tails";
+        System.out.println("Coin Flip: " + coinFlip);
 
-
-
+        //dice rolling
+        int die1 = (int) (Math.random() * 6) + 1;
+        int die2 = (int) (Math.random() * 6) + 1;
+        System.out.println("Dice Roll: " + die1 + "+" + die2);
 
 
     }
